@@ -33,9 +33,9 @@ spec:
       volumes:
         - name: images
           persistentVolumeClaim:
-            claimName: imagesClaim
+           claimName: imagesClaim
         - name: annotations
           persistentVolumeClaim:
             claimName: annotationsClaim
-        resources:
+      resources:
 {{ toYaml .Values.resources | indent 12 }}
